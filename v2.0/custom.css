@@ -1,0 +1,185 @@
+/* 全局样式 */
+
+	* {
+		border: 0;
+		padding: 0;
+		margin: 0 auto;
+		font-family: "Microsoft YaHei";
+	}
+
+/* 表格样式 */
+
+	table {
+		border-collapse: collapse;
+	}
+
+	caption {
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 15px;
+		margin-bottom: 5px;
+		color: red;
+	}
+	
+	/* thead 样式 */
+
+		thead {
+			border-bottom: 1px solid #E0E0E0;
+			min-width: 915px;
+		}
+
+		th {
+			padding: 5px;
+			background-color: #555;
+			color: #FFF;
+			text-align: center;
+			line-height: 2em;
+		}
+
+	/* tbody 样式 */
+
+		tbody td {
+			padding: 10px;
+			line-height: 18px;
+			border-top: 1px solid #E0E0E0;
+		}
+
+		#table-notes {
+			color: #555;
+			background-color: rgba(253, 225, 109, 0.5);
+		}
+
+		#table-notes td {
+			border-top: 0;
+		}
+
+		tbody tr:hover td {
+			background-color: rgba(253, 225, 109, 0.5);
+		}
+
+		tbody tr:hover td.kywd {
+			cursor: pointer;
+		}
+
+		td.num {
+			text-align: right;
+			color: gray;
+			font-family: Arial;
+		}
+
+		td.rate {
+			width: 8em;
+		}
+
+		td.kywd {
+			position: relative;
+		}
+
+		td.kywd a {
+			color: #555;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		td.kywd a:hover {
+			color: red;
+		}
+
+		span.word {
+			font-size: 14px;
+		}
+
+		td.kywd div.rating-container {
+			position: absolute;
+			width: 200px; /* 解决元素绝对定位以后产生的图标换行为题，通过增加宽度使图标保持在同一行。*/
+			height: 30px;
+			top: 6px;
+		}
+
+		td.kywd div.rating-container .clear-rating .glyphicon {
+			top: 3px;
+		}
+
+		td.kywd div.rating-container .caption {
+			margin-top: 2px;
+		}
+
+		td.kywd div.rating-container .rating {
+			cursor: pointer;
+		}
+
+.rate span {
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFF;
+	padding: 3px 7px;
+	border-radius: 2px;
+}
+
+.star0 {
+	background-color: #777;
+}
+
+.star05, .star1 {
+	background-color: #D9534F;
+}
+
+.star15, .star2 {
+	background-color: #F0AD4E;
+}
+
+.star25, .star3 {
+	background-color: #5BC0DE;
+}
+
+.star35, .star4 {
+	background-color: #337AB7;
+}
+
+.star45, .star5 {
+	background-color: #5CB85C;
+}
+
+#menu a {
+	color: #000;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#btnScrollTo {
+	height: 25px;
+}
+
+#btnScrollTo td {
+	position: relative;
+	height: 16px;
+	background-color: yellow;
+	color: #000;
+	text-align: right;
+}
+
+#btnScrollDown, #btnScrollTop {
+	cursor: pointer;
+}
+
+#btnScrollTop {
+	position: absolute;
+	right: 13px;
+	top: 2px;
+}
+
+#btnScrollDown {
+	position: absolute;
+	right: 13px;
+	top: 10px;
+}
+
+#loading {
+	position: absolute;
+	right: 160px;
+	top: 100px;
+}
+
+
+
